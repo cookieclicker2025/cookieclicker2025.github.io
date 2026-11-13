@@ -6259,7 +6259,7 @@ Game.Launch=function()
 		{
 			if (Game.prefs.notifs)
 			{
-				quick=Math.min(6,quick);
+				quick=Math.min(0,quick);
 				if (!quick) quick=6;
 			}
 			desc=replaceAll('==CLOSETHIS()==','Game.CloseNote('+Game.noteId+');',desc);
